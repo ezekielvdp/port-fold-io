@@ -1,0 +1,154 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    text-decoration: none;
+}
+
+#main-wrapper {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    max-height: 145.5px;
+    height: 5%;
+    width: 100%;
+    background: #38393d;
+}
+
+/* ======================================
+       FOR PAGE-NAV: 1st SLICE
+ ======================================*/
+
+#nav-home {
+    margin: 0;
+    background-color: transparent;
+    background-size: 1px;
+    border-radius: 0 2px 2px 0;
+    transition: 1s;
+    padding: 2px 0;
+    
+    order: 1;
+    flex-basis: 10%;
+    min-width: 125px;
+}
+
+#nav-home:hover {
+    background-color: orange;
+    background-size: 100%;
+}
+
+#nav-home-img {
+    background-image: url(../img/zeke-grad.jpg);
+    background-size: cover;
+    border: 2px solid white;
+    background-position: 0 -5px;
+    background-repeat: no-repeat;
+    border-radius: 100%;
+    height: 75px;
+    width: 75px;
+    margin: 25% 0 25% 20px;
+}
+
+/* ======================================
+       FOR PAGE-NAV: 2nd SLICE
+ ======================================*/
+
+/*     size of the 2nd-slice     */
+nav { order: 2; flex-basis: 60%; min-width: 145.5px;}
+
+nav ul li { display: inline-block; }
+
+main-page {
+    background-image: url("../img/main.JPG");
+    background-color: #38393d;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+
+/* ======================================
+       FOR ICONS-NAV: 3rd SLICE
+ ======================================*/
+
+/*    size of the 3rd-slice     */
+#nav-social { order: 3; flex-basis: 31%; min-width: 145.5px;}
+
+#social-list {
+    margin: 10% 0;
+    min-height: 150px;
+}
+
+#social-list li{
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    padding: 0;
+    margin: 0 5px;
+}
+
+/*  inside the social-list   */
+        #facebook-nav {
+            background-image: url(../img/unfacebook.png);
+            background-position: center;
+            background-size: cover;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+            #facebook-nav:hover {
+                background-image: url(../img/facebook.png);
+            }
+
+        #twitter-nav {
+            background-image: url(../img/untwitter.png);
+            background-position: center;
+            background-size: cover;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+            #twitter-nav:hover {
+                background-image: url(../img/twitter.png);
+            }
+
+
+        #linkedin-nav {
+            background-image: url(../img/unlinkedin.png);
+            background-position: center;
+            background-size: cover;
+            transition: 1s;
+            cursor: pointer;
+        }
+
+            #linkedin-nav:hover {
+                background-image: url(../img/linkedin.png);
+            }
+
+        #github-nav {
+            background-image: url(../img/ungithub.png);
+            background-position: center;
+            background-size: cover;
+            transition: 1s;
+            cursor: pointer;
+        }
+            #github-nav:hover {
+                background-image: url(../img/github.png);
+            }
+/*  END OF: inside the social-list   */
+
+.nav-icon { 
+    height: 50px; width: 50px; 
+    padding: 10px;
+    margin: 0;
+}
