@@ -2,207 +2,94 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
-    display: flex;
-    flex-direction: row;
-}
-
-nav {
-    display: flex;
-}
-
 a {
-    text-decoration: none;
+    text-decoration: none
 }
 
-#main-wrapper {
-    height: 100%;
-    width: 100%;
+#main-container {
+    display: flex;
+    flex-direction: column;
 }
 
-header {
-    max-height: 145.5px;
-    height: 5%;
-    width: 100%;
-    background: #38393d;
+#header-container {
+    display: flex;
 }
+    header {
+        display: flex;
+        flex-direction: row;
+    }
+        /*half by half of the flex with the header as container*/
+        #logo-container { flex-basis: 50%; }
+            /*puts the nav 10% left, of the 50% of the flex-basis(logo-container).*/
+            #logo-container p { text-align: left; margin-left: 10%; }
+            #logo-container p a {
+                padding: 10px;
+            }
+        #nav-container { flex-basis: 50%; }
+            /*puts the nav 10% right, of the 50% of the flex-basis(nav-container).*/
+            .nav-tabs { text-align: right; margin-right: 10%;}
+            .nav-tabs li {
+                display: inline-block;
+                padding: 10px;
+            }
 
-/* ======================================
-       FOR PAGE-NAV: 1st SLICE
- ======================================*/
-
-#nav-home {
-    margin: 0;
-    background-color: transparent;
-    background-size: 1px;
-    border-radius: 0 2px 2px 0;
-    transition: 1s;
-    padding: 2px 0;
-    
-    order: 1;
-    flex-basis: 10%;
-    min-width: 125px;
-}
-
-#nav-home:hover {
-    background-color: orange;
-    background-size: 100%;
-}
-
-#nav-home-img {
-    background-image: url(../img/zeke-grad.jpg);
-    background-size: cover;
-    border: 2px solid white;
-    background-position: 0 -5px;
-    background-repeat: no-repeat;
-    border-radius: 100%;
-    height: 75px;
-    width: 75px;
-    margin: 25% 0 25% 20px;
-}
-
-/* ======================================
-       FOR PAGE-NAV: 2nd SLICE
- ======================================*/
-
-/*     size of the 2nd-slice     */
-nav { order: 2; flex-basis: 60%; min-width: 145.5px;}
-
-
-.order-1 { order: 1; flex-basis: 33.33%; text-align: center; margin-top: 8%;}
-.order-2 { order: 2; flex-basis: 33.33%; text-align: center; margin-top: 8%;}
-.order-3 { order: 3; flex-basis: 33.33%; text-align: center; margin-top: 8%;}
-
-.order-1 a { color: gray; transition: 0.8s; font-size: 1.2em;}
-.order-2 a { color: gray; transition: 0.8s; font-size: 1.2em;}
-.order-3 a { color: gray; transition: 0.8s; font-size: 1.2em;}
-
-    .order-1 a:hover { color: white; }
-    .order-2 a:hover { color: white; }
-    .order-3 a:hover { color: white; }
-
-main-page {
-    background-image: url("../img/main.JPG");
-    background-color: #38393d;
+#home-container {
+    background-image: url(../img/main-edited.png);
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
-    height: 100%;
     width: 100%;
+    height: 700px;
+    color: white;
+    text-align: center;
 }
+    #home-container h3 { font-size: 3em; margin: 0}
+    #welcome-text { margin-top: 8%; }
+        #welcome-text p {margin: 30px; font-size: 0.9em;}
+    #about-button { margin-top: 50px;}
+    #about-button a{
+        background-color: crimson;
+        border-radius: 10px;
+        border: solid 3px crimson;
+        padding: 15px 50px;
+        font-size: 1.2em;
+        color: white;
+        transition: 0.5s ease;
+    }
+    #about-button a:hover{
+        background-color: transparent;
+    }
 
 
-/* ======================================
-       FOR ICONS-NAV: 3rd SLICE
- ======================================*/
-
-/*    size of the 3rd-slice     */
-#nav-social { order: 3; flex-basis: 31%; min-width: 145.5px;}
-
-#social-list {
-    margin: 10% 0;
-    min-height: 150px;
+.nav-transition a {
+    color: white;
+    transition: 0.2s ease;
 }
+    .nav-transition a:hover {
+        color: gray;
+    }
 
-#social-list li{
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-    padding: 0;
-    margin: 0 5px;
+    .transition a: hover {
+        color: green;
+    }
+
+/* spread-out style */
+.logo-transition {
+	display: inline-block;
+	position: relative;
+	padding-bottom: 3px;
+    color: beige;
 }
-
-/*  inside the social-list   */
-        #facebook-nav {
-            background-image: url(../img/unfacebook.png);
-            background-position: center;
-            background-size: cover;
-            transition: 1s;
-            cursor: pointer;
+    .logo-transition:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 2px;
+        width: 0px;
+        background: transparent;
+        transition: 0.5s ease;
+    }
+        .logo-transition:hover:after {
+            width: 100%;
+            background: crimson;
         }
-
-            #facebook-nav:hover {
-                background-image: url(../img/facebook.png);
-            }
-
-        #twitter-nav {
-            background-image: url(../img/untwitter.png);
-            background-position: center;
-            background-size: cover;
-            transition: 1s;
-            cursor: pointer;
-        }
-
-            #twitter-nav:hover {
-                background-image: url(../img/twitter.png);
-            }
-
-
-        #linkedin-nav {
-            background-image: url(../img/unlinkedin.png);
-            background-position: center;
-            background-size: cover;
-            transition: 1s;
-            cursor: pointer;
-        }
-
-            #linkedin-nav:hover {
-                background-image: url(../img/linkedin.png);
-            }
-
-        #github-nav {
-            background-image: url(../img/ungithub.png);
-            background-position: center;
-            background-size: cover;
-            transition: 1s;
-            cursor: pointer;
-        }
-            #github-nav:hover {
-                background-image: url(../img/github.png);
-            }
-/*  END OF: inside the social-list   */
-
-.nav-icon { 
-    height: 50px; width: 50px; 
-    padding: 10px;
-    margin: 0;
-}
-
-/*HOVER-ANIMATION*/
-
-.hvr-bounce-to-right {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  -moz-osx-font-smoothing: grayscale;
-  position: relative;
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-}
-
-.hvr-bounce-to-right:hover {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2098d1;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: 0 50%;
-  transform-origin: 0 50%;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.5s;
-  transition-duration: 0.5s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
-}
