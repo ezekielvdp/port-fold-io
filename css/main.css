@@ -10,6 +10,19 @@ a {
     display: flex;
     flex-direction: column;
 }
+    .order-1 {
+        order: 1;
+    }
+    .order-2 {
+        order: 2;
+    }
+    .order-3 {
+        order: 3;
+    }
+    .order-4 {
+        order: 4
+    }
+/*    .center-60 { margin-left: 30%;}*/
 
 #header-container {
     display: flex;
@@ -45,12 +58,13 @@ a {
 }
     #home-container h3 { font-size: 3em; margin: 0}
     #welcome-text { margin-top: 8%; }
-        #welcome-text p {margin: 30px; font-size: 0.9em;}
+        #welcome-text p:nth-child(3) {margin: 30px 0 0; font-size: 0.9em;}
+        #welcome-text p:nth-child(4) {margin: 0 0 30px; font-size: 0.9em;}
     #about-button { margin-top: 50px;}
     #about-button a{
         background-color: crimson;
         border-radius: 10px;
-        border: solid 3px crimson;
+        border: solid 4px crimson;
         padding: 15px 50px;
         font-size: 1.2em;
         color: white;
@@ -60,17 +74,158 @@ a {
         background-color: transparent;
     }
 
+#about-container {
+    background-color: white;
+    padding: 80px;
+}
+
+    .line-title {
+        border: solid 3px crimson;
+        border-radius: 5px;
+        padding: 5px 20px;
+        text-align: center;
+        text-transform: uppercase;
+        width: 150px;
+        color: crimson;
+    }
+
+    #about-zeke {
+        flex-basis: 60%;
+        min-width: 200px;
+        padding: 20px
+    }
+
+    #img-zeke {
+        flex-basis: 40%;
+        min-width: 300px;
+    }
+
+    #about-info {
+    /*    background-color: #383b43;*/
+        background-color: white;
+    /*
+        border-radius: 10px;
+        border: solid 2px grey;
+    */
+        padding: 50px;
+        color: black;
+        display: flex;
+    }
+
+    .profile-image {
+        margin-left: 25%;
+        height: 250px;
+        width: 200px;
+        border: solid 2px black;
+        border-radius: 15%;
+    }
+
+
+footer {
+    background-color: #383b43;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    height: 100%;
+    min-height: 15%;
+}
+
+footer a {
+    padding: 10px;
+    color: white;
+    transition: 0.2s ease;
+    height: 100%;
+    width: 100%;
+    min-width: 100%;
+}
+    footer a:hover {
+        color: crimson;
+    }
+
+#footer-left {
+    flex-basis: 33.33%;
+    height: 30px;
+    margin-top: 10px;
+}
+
+#footer-middle {
+    flex-basis: 33.33%;
+    height: 30px;
+    margin: 0;
+    min-width: 450px;
+}
+    #footer-middle ul {
+        margin-top: 10px;
+        text-align: center;
+    }
+    #footer-middle ul li {
+        display: inline-block;
+    }
+    #footer-middle ul li a {
+        padding: 20px;
+    }
+
+#footer-right {
+    flex-basis: 33.33%;
+    min-width: 300px;
+}
+    #footer-right ul {
+            margin: 0 0 0 30%;
+    }
+    #footer-right a { padding: 0; }
+    #footer-right ul li { display: inline-block; margin: 0 10px;}
+
+    #facebook-icon {
+        background-image: url(../img/unfacebook.png);
+        background-size: cover;
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        transition: 0.2s ease;
+    }
+
+    #twitter-icon {
+        background-image: url(../img/untwitter.png);
+        background-size: cover;
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        transition: 0.2s ease;
+    }
+
+    #linkedin-icon {
+        background-image: url(../img/unlinkedin.png);
+        background-size: cover;
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        transition: 0.2s ease;
+    }
+
+    #github-icon {
+        background-image: url(../img/ungithub.png);
+        background-size: cover;
+        cursor: pointer;
+        height: 35px;
+        width: 35px;
+        transition: 0.2s ease;
+    }
+
+        #facebook-icon:hover { background-image: url(../img/facebook.png); }
+        #twitter-icon:hover { background-image: url(../img/twitter.png); }
+        #linkedin-icon:hover { background-image: url(../img/linkedin.png); }
+        #github-icon:hover { background-image: url(../img/github.png); }
+
+
+/*FOR AWESOME CLASSES ONLY*/
 
 .nav-transition a {
     color: white;
     transition: 0.2s ease;
 }
     .nav-transition a:hover {
-        color: gray;
-    }
-
-    .transition a: hover {
-        color: green;
+        color: crimson;
     }
 
 /* spread-out style */
@@ -78,7 +233,7 @@ a {
 	display: inline-block;
 	position: relative;
 	padding-bottom: 3px;
-    color: beige;
+    color: white;
 }
     .logo-transition:after {
         content: '';

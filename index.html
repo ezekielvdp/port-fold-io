@@ -5,39 +5,76 @@
     <link rel="stylesheet" type="text/css" href="css/normalize.css" />
     <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css" />
 </head>
     
 <body>
     <main id="main-container">
-        <div id = "home-container">
-                <header id = "header-container">
-                    <div id = "logo-container" class="home-transition">
-                        <p id = ""><a href = "#home-container" class="logo-transition"> ezekielvdp | WEB </a></p>
-                    </div>
-                    <nav id = "nav-container">
-                        <ul class = "nav-tabs">
-                            <li class = "nav-transition"><a href="#main-container">HOME</a></li>
-                            <li class = "nav-transition"><a href="#about">ABOUT</a></li>
-                            <li class = "nav-transition"><a href="#contact">CONTACT</a></li>
-                        </ul>
-                    </nav>
-                </header>
-                <div id = "welcome-text">
-                    <h3>HI THERE I'M EZEKIEL</h3>
-                    <h3>WELCOME TO MY WEB!</h3>
-                    <p>This might be a little awkward but if really want to look at my background, Sure why not.</p>
-                    <div id = "about-button"><p><a href ="#about">GET TO KNOW ME!</a></p></div>
-                </div>
-        </div>
-        <div id="about">
-            <div id = "div-column">
-                <img src= "img/zeke-grad.jpg" class = "profile-image" />
-            </div>
-        </div>
+<!--
+        <div class="parallax-layer parallax-bg"></div>
+        <div class="parallax-layer parallax-base">...</div>
+-->
+            <div id = "home-container" class = "order-1">
+                    <header id = "header-container">
+                        <div id = "logo-container" class="home-transition">
+                            <p id = ""><a href = "#home-container" class="logo-transition"> ezekielvdp | WEB </a></p>
+                        </div>
+                        <nav id = "nav-container">
+                            <ul class = "nav-tabs">
+                                <li class = "nav-transition"><a href="#main-container">HOME</a></li>
+                                <li class = "nav-transition"><a href="#about-info">ABOUT</a></li>
+                                <li class = "nav-transition"><a href="#contact">CONTACT</a></li>
+                            </ul>
+                        </nav>
+                    </header>
 
-        <footer>
-            <div id = "footer-left" ><a href="#main-container" class = "transition">&copy; 2015 Ezekiel Dela Pena</a></div>
-        </footer>
+                    <div id = "welcome-text">
+                        <h3>HI THERE I'M EZEKIEL</h3>
+                        <h3>WELCOME TO MY WEB!</h3>
+                        <p>This might be a little awkward but if you really want to look at my personal background,</p>
+                        <p>Sure why not.</p>
+                        <div id = "about-button"><p><a href ="#about-info">LEARN ABOUT ME!</a></p></div>
+                    </div>
+            </div>
+            <div id="about-container" class="order-2">
+                    <div id = "about-info">
+                        <div id = "about-zeke" class="order-1">
+                            <h2 class = "line-title center-60">about me</h2>
+                            <h3>Ezekiel Dela Pena</h3>
+                            <p>Status: Fresh-graduate</p>
+                            <p>I'm a BS Computer Science graduate from University of Sto. Tomas, Manila.</p>
+                            <p>I enjoy web development and making stuff look awesome. When I'm not doing some programming stuff I usually surf the net and playing some video games.</p>
+                        </div>
+                        <div id = "img-zeke" class="order-2">
+                            <img src= "img/zeke-grad.jpg" class = "profile-image" />
+                        </div>
+                    </div>
+            </div>
+            <div id="contact-container" class="order-3">
+                    <div id = "contact-info">
+
+                    </div>
+            </div>
+            <footer class="order-4">
+                <div id = "footer-left" class="order-1" ><a href="#main-container" class = "transition">&copy; 2015 Ezekiel Dela Pena</a></div>
+<!--                <div id = "special-div">-->
+                    <div id = "footer-middle" class="order-2">
+                            <ul>
+                                <li class = "nav-transition"><a href="#main-container">HOME</a></li>
+                                <li class = "nav-transition"><a href="#about-info">ABOUT</a></li>
+                                <li class = "nav-transition"><a href="#contact">CONTACT</a></li>
+                            </ul>
+                    </div>
+                    <div id = "footer-right" class="order-3">
+                        <ul>
+                            <li id = "facebook-icon"><a href=""></a></li>
+                            <li id = "twitter-icon"><a href=""></a></li>
+                            <li id = "linkedin-icon"><a href=""></a></li>
+                            <li id = "github-icon"><a href=""></a></li>
+                        </ul>
+                    </div>
+<!--                </div>-->
+            </footer>
     </main>
 </body>
 </html>

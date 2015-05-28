@@ -1,0 +1,61 @@
+@media screen and  (max-width: 480px) {
+     #about-info {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 660px) {
+
+    #about-info {
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    #footer-left {
+        font-size: 0.6em;
+        flex-basis: 150px;
+    }
+
+    #footer-middle {
+/*        margin: -15px;*/
+        font-size: 0.6em;
+        padding: 0;
+        min-width: 300px;
+    }
+
+    #footer-right ul {
+        padding-left: 115px;
+    }
+
+    #footer-right {
+        min-width: 500px;
+    }
+
+    #footer-right ul li {
+        display: inline-block;
+        margin: 0;
+    }
+
+    #facebook-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    #twitter-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    #linkedin-icon {
+        width: 25px;
+        height: 25px;
+    }
+
+    #github-icon {
+        width: 25px;
+        height: 25px;
+    }
+}
