@@ -1,80 +1,142 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title> Ezekiel Dela Pena | CS GRAD</title>
-    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
-    <link rel="stylesheet" type="text/css" href="css/media-queries.css" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>WEB | ezekielvdp</title>
+   <link href='http://fonts.googleapis.com/css?family=Candal' rel='stylesheet' type='text/css'>
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link href="css/portfolio.css" rel="stylesheet">
+    <!--  for scroll-nav  -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+   <script src="js/scrolling-nav.js"></script>
+   <script src="js/custom.js"></script>
 </head>
     
 <body>
-    <main id="main-container">
-<!--
-        <div class="parallax-layer parallax-bg"></div>
-        <div class="parallax-layer parallax-base">...</div>
--->
-            <div id = "home-container" class = "order-1">
-                    <header id = "header-container">
-                        <div id = "logo-container" class="home-transition">
-                            <p id = ""><a href = "#home-container" class="logo-transition"> ezekielvdp | WEB </a></p>
-                        </div>
-                        <nav id = "nav-container">
-                            <ul class = "nav-tabs">
-                                <li class = "nav-transition"><a href="#main-container">HOME</a></li>
-                                <li class = "nav-transition"><a href="#about-info">ABOUT</a></li>
-                                <li class = "nav-transition"><a href="#contact">CONTACT</a></li>
-                            </ul>
-                        </nav>
-                    </header>
-
-                    <div id = "welcome-text">
-                        <h3>HI THERE I'M EZEKIEL</h3>
-                        <h3>WELCOME TO MY WEB!</h3>
-                        <p>This might be a little awkward but if you really want to look at my personal background,</p>
-                        <p>Sure why not.</p>
-                        <div id = "about-button"><p><a href ="#about-info">LEARN ABOUT ME!</a></p></div>
+    <main>
+        <div class="jumbotron" id = "home">
+            <div class="container center-text" style="margin-top: 10%;">
+                <div class="font-header">
+                    <h1 style="margin-bottom=50px;">EZEKIEL DELA PEÑA</h1><span class="label label-success">FOR HIRE</span>
+                    <p class="margintop-30">...</p>
+                    <p class="margintop-30" style="font-size: 0.7em">A Graduate from University of Santo Tomas, MNL</p>
+                    <p class="p-button"><a class="btn btn-primary btn-lg page-scroll" href="#about" role="button">Learn more</a></p>
+                </div>
+            <!-- will make a scroll-down nav-fixed-top    -->
+            <nav class="navbar navbar-default navbar-fixed-top">
+                <div class="container font-nav">
+                    <!--  for mobile  -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false" onclick="myGray()">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand page-scroll" href="#home">WEB | ezekielvdp</a>
                     </div>
-            </div>
-            <div id="about-container" class="order-2">
-                    <div id = "about-info">
-                        <div id = "about-zeke" class="order-1">
-                            <h2 class = "line-title center-60">about me</h2>
-                            <h3>Ezekiel Dela Pena</h3>
-                            <p>Status: Fresh-graduate</p>
-                            <p>I'm a BS Computer Science graduate from University of Sto. Tomas, Manila.</p>
-                            <p>I enjoy web development and making stuff look awesome. When I'm not doing some programming stuff I usually surf the net and playing some video games.</p>
-                        </div>
-                        <div id = "img-zeke" class="order-2">
-                            <img src= "img/zeke-grad.jpg" class = "profile-image" />
-                        </div>
-                    </div>
-            </div>
-            <div id="contact-container" class="order-3">
-                    <div id = "contact-info">
-
-                    </div>
-            </div>
-            <footer class="order-4">
-                <div id = "footer-left" class="order-1" ><a href="#main-container" class = "transition">&copy; 2015 Ezekiel Dela Pena</a></div>
-<!--                <div id = "special-div">-->
-                    <div id = "footer-middle" class="order-2">
-                            <ul>
-                                <li class = "nav-transition"><a href="#main-container">HOME</a></li>
-                                <li class = "nav-transition"><a href="#about-info">ABOUT</a></li>
-                                <li class = "nav-transition"><a href="#contact">CONTACT</a></li>
-                            </ul>
-                    </div>
-                    <div id = "footer-right" class="order-3">
-                        <ul>
-                            <li id = "facebook-icon"><a href=""></a></li>
-                            <li id = "twitter-icon"><a href=""></a></li>
-                            <li id = "linkedin-icon"><a href=""></a></li>
-                            <li id = "github-icon"><a href=""></a></li>
+                    <!--    MENU if maxwidth 768px will be inserted to toggle-nav     -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav navbar-right nav-pills nav-stacked" id ="menu-holder">
+                            <!-- class menu-button to navigate a:link    -->
+                            <li><a class="menu-button page-scroll" href="#home">HOME</a></li>
+                            <li><a class="menu-button page-scroll" href="#about">ABOUT</a></li>
+                            <li><a class="menu-button page-scroll" href="#contact">CONTACT</a></li>
                         </ul>
                     </div>
-<!--                </div>-->
-            </footer>
+                </div>
+            </nav>
+            </div>
+        </div>
+        <!-- ABOUT  -->
+        <div class="container" id="about">
+            <h1 class="text-center separator">
+                <strong>ABOUT ME</strong>
+            </h1>
+            <div class="row white">
+                <div class="col-md-7 right-text" id="container-description">
+                    <h2 class="bolder">I'm a Graduate from <p>UST, Manila.<p>(BATCH 2015)</p></h2><br>
+                    <h3 class="bold">"I believe that hardwork and passion is more important than being smart."</h3><br>
+                    <h6><p class="description">I enjoy creating beautiful website from scratch. But also enjoys creating website using Bootstrap. When I'm not doing some coding. You'll see me playing video games,watching movies, or doing some sketch.</p></h6>
+                </div>
+                <div class="col-md-5" id="container-about-photo">
+                    <div id="about-photo"></div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- TECHNICAL SKILLS  -->
+        <div class="jumbotron margintop-30" id="technical-skills">
+            <div class="container">
+                <h2 class="text-center separator">
+                    <strong>My technical skills</strong>
+                </h2>
+                <p class="text-center">HTML</p>
+                <div class="progress" style="height:30px;">
+                  <div class="progress-bar progress-bar-striped html" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 90%; height:30px;">
+                        <h5>90%</h5>
+                  </div>
+                </div>
+                <p class="text-center">CSS</p>
+                <div class="progress" style="height:30px;">
+                  <div class="progress-bar progress-bar-striped css" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 70%; height:30px;">
+                        <h5>70%</h5>
+                  </div>
+                </div>
+                <p class="text-center">JAVASCRIPT</p>
+                <div class="progress" style="height:30px;">
+                  <div class="progress-bar progress-bar-striped javascript" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 40%; height:30px;">
+                        <h5>40%</h5>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="contact">
+            <h1 class="text-center separator">CONTACT ME</h1>
+            <div class="row">
+                <div class="col-md-6" >
+                    <h3 class="bolder" style="line-height:1.5em; margin-left: 2em;">
+                        Hi there! <br>
+                        <span class="bold">If you want to contact me</span> <p class="bold">you could send me a message here.</p></h3>
+                        <ul class="social-media">
+                            <li><a href="https://www.facebook.com/kieeeeel" id="facebook" onclick="on_hover();">Add me on Facebook</a></li>
+                            <li><a href="https://twitter.com/BlueZirks" class="twitter">Follow me on Twitter</a></li>
+                            <li><a href="https://ph.linkedin.com/in/ezekielvdp" class="linkedin">Connect with me on Linkedin</a></li>
+                            <li><a href="https://github.com/ezekielvdp" class="github">See my Github repositories</a></li>
+                        </ul>
+                </div>
+                <div class="cold-md-6">
+                    <h3 class="bolder" style="line-height:1.5em; margin-left: 2em;"><strong>OR!</strong><br>
+                    <span class="bold">You can send me an email<br> and call me maybe.</span></h3>
+                        <ul class="contact-group">
+                            <li><img src="img/phone.png" alt="phone" class="phone"><span>(+63)926 252 3925/ (02)255-48-85</span></li>
+                            <li><img src="img/mail.png" alt="mail"  class="mail"><span>ezekielvdp@yahoo.com</span></li>
+                        </ul>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div class="jumbotron no-margin" id="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h4><span  class="label label-success">Status</span></h4>
+                        <h4>I'm currently looking for a full-time job.</h4>
+                    </div>
+                    <div class="col-xs-4">
+                        <br>
+                        <h5>&copy; 2015 All rights reserved<br> Ezekiel dela Pena</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
+
+    <script src="//use.edgefonts.net/paytone-one.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

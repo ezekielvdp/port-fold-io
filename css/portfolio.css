@@ -1,0 +1,317 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,900);
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+}
+
+main {
+    height: 100%;
+}
+
+nav {
+    margin-bottom: 200px;
+}
+
+/*--CUSTOMIZED NAV--*/
+.nav-pills li{
+    border: solid 2px transparent;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.navbar-header .navbar-brand, #menu-holder .menu-button {
+    color: white;
+    transition: 0.3s ease;
+}
+
+.navbar-header .navbar-brand:visited {
+    color: white;
+}
+
+#menu-holder li a:hover {
+    background-color: crimson;
+}
+
+#menu-holder li a:hover {
+    background-color: crimson;
+}
+.navbar-header .navbar-brand:hover {
+    color: crimson;
+}
+
+.active {
+    background-color: crimson;
+}
+.navbar {
+    padding: 10px;
+}
+
+.navbar-default {
+    background-color: transparent;
+    border: transparent;
+}
+
+/*--CUSTOMIZED BUTTON--*/
+.btn {
+    background-color: transparent;
+    border: solid 3px crimson;
+    transition: 0.5s ease;
+}
+
+.p-button a:active,
+.p-button a:visited,
+.p-button a:link {
+    background-color: transparent;
+    border: solid 3px crimson;
+}
+
+.page-header {
+    border-bottom: 2px solid #eee;
+}
+
+.p-button {
+    margin-top: 35px
+}
+
+.p-button a:hover {
+    background-color: crimson;
+    border: solid 3px crimson;
+}
+
+
+
+.jumbotron {
+    color: white;
+}
+/*--IDs (made)--*/
+#home {
+    background-image: url(../img/desktop-2.jpg);
+    background-position: center center;
+    height: 115vh;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+
+#home, #about, #contact {
+    padding-top: 6%;
+}
+
+#container-about-photo {
+    padding: 0px;
+}
+
+#container-description {
+    color: black;
+}
+
+#about-photo {
+    background-image: url(../img/zeke.jpg);
+    background-position: center top;
+    height: 65vh;
+    text-align: center;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5%;
+    border: 1px solid black;
+}
+
+#technical-skills .container > p{
+    color: black;
+    font-weight: 700;
+}
+
+#footer {
+    width: 100%;
+    background-color: rgba(34,34,34,1);
+}
+/*--TYPOGRAPHY--*/
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
+}
+
+.font-header {
+    font-family: 'Candal', sans-serif;
+    font-size: 1.5em;
+}
+
+.font-nav {
+    font-family: 'Candal', sans-serif;
+    font-size: 0.9em;
+}
+
+.font-title {
+    font-size: 0.9em;
+}
+
+.separator {
+    font-family: "paytone-one", sans-serif;
+    color: crimson;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 3px solid crimson;
+}
+
+
+/*--Color for progress bars--*/
+.html {
+    background-color: cadetblue;
+}
+
+.css {
+    background-color: dodgerblue;
+}
+
+.javascript {
+    background-color: forestgreen;
+}
+
+.white {
+    background-color: white;
+}
+
+.description {
+/*    margin-left: 40%;*/
+/*    width: 50%;*/
+    line-height: 1.8em;
+    margin-bottom: 1.4em;
+    font-size: 1.6em;
+}
+
+/*--IMAGE CLASS--*/
+.social-media li {
+    display: block;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+.social-media li a {
+    text-decoration: none;
+    min-width: 100%;
+    padding-left: 60px;
+    font-size: 1.2em;
+    line-height: 50px;
+    display: block;
+    background: url(../img/imagesprite-1.png) no-repeat;
+    height: 50px;
+    transition: 0.5s ease;
+}
+
+        .social-media li a:hover {
+            background: url(../img/imagesprite-2.png) no-repeat;
+        }
+
+        .social-media li a.facebook {
+          background-position: 0px -25px;
+          color: #3B5998;
+        }
+
+        .social-media li a.twitter {
+          background-position: 0px -50px;
+          color: #4099FF;
+        }
+
+        .social-media li a.linkedin {
+          background-position: 0px -97px;
+          color: #007bb6;
+        }
+
+        .social-media li a.github {
+          background-position: 0px -145px;
+          color: purple;
+        }
+
+
+.contact-group li {
+    display: block;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+.contact-group li span {
+
+}
+
+.phone, .mail {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+
+/*--Margin classes--*/
+
+.margintop-30 {
+    margin-top: 30px;
+}
+
+.margintop-10 {
+    margin-top: 10px;
+}
+
+        @media screen and (max-width: 768px) {
+            #home {
+              height: 100vh;
+              text-align: center;
+              width: 100%;
+              background-color: transparent;
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+
+            .separator {
+                margin-top: 10px;
+            }
+
+            #example {
+                background-color: rgba(34,34,34,1);
+            }
+
+            #about-photo {
+                height: 73vh;
+            }
+
+            .navbar {
+                padding:inherit;
+            }
+
+            .nav-pills li {
+                display: list-item;
+                margin: 0 10px;
+            }
+
+            .inline-media li {
+                display: block;
+            }
+        }
+
+
+.no-margin {
+    margin: 0;
+    padding: 10px;
+}
+
+.inline-media {
+    position: relative;
+    right: 0;
+}
+
+.inline-media li {
+    display: inline-block;
+}
