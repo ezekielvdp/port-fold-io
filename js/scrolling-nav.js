@@ -15,7 +15,7 @@ $(function() {
 
 
 $(document).ready(function(){
-   var scroll_start = -200;
+   var scroll_start = 10500;
    var startchange = $('.navbar-default');
    var offset = startchange.offset();
    $(document).scroll(function() {

@@ -1,4 +1,18 @@
-@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,900);
+@font-face {
+    src: url(../font/NEORD.ttf);
+    font-family: NEORD;
+}
+
+@font-face {
+    src: url(../font/Nexa-Light.ttf);
+    font-family: Nexa;
+}
+
+@font-face {
+    src: url(../font/Nexa-Bold.ttf);
+    font-weight: bold;
+    font-family: Nexa;
+}
 
 * {
     box-sizing: border-box;
@@ -7,7 +21,7 @@
 }
 
 body {
-    font-family: "Raleway", sans-serif;
+    font-family: "Nexa", sans-serif;
 }
 
 main {
@@ -19,7 +33,7 @@ nav {
 }
 
 /*--CUSTOMIZED NAV--*/
-.nav-pills li{
+.nav-pills li {
     border: solid 2px transparent;
     border-radius: 5px;
     transition: 0.2s;
@@ -28,6 +42,15 @@ nav {
 .navbar-header .navbar-brand, #menu-holder .menu-button {
     color: white;
     transition: 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.menu-button {
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
 .navbar-header .navbar-brand:visited {
@@ -41,6 +64,7 @@ nav {
 #menu-holder li a:hover {
     background-color: crimson;
 }
+
 .navbar-header .navbar-brand:hover {
     color: crimson;
 }
@@ -48,6 +72,7 @@ nav {
 .active {
     background-color: crimson;
 }
+
 .navbar {
     padding: 10px;
 }
@@ -58,15 +83,15 @@ nav {
 }
 
 /*--CUSTOMIZED BUTTON--*/
-.btn {
+.btn-primary {
     background-color: transparent;
     border: solid 3px crimson;
     transition: 0.5s ease;
 }
 
-.p-button a:active,
-.p-button a:visited,
-.p-button a:link {
+.btn-primary a:active,
+.btn-primaryn a:visited,
+.btn-primary a:link {
     background-color: transparent;
     border: solid 3px crimson;
 }
@@ -75,19 +100,27 @@ nav {
     border-bottom: 2px solid #eee;
 }
 
-.p-button {
+.btn-primary {
     margin-top: 35px
 }
 
-.p-button a:hover {
+.btn-primary:hover {
     background-color: crimson;
     border: solid 3px crimson;
 }
 
+.thumbnail {
+    background-color: rgba(239, 226, 229, 0.35);
+}
 
-
+.thumbnail div p{
+    font-size: 1.5em;
+    margin: 0;
+}
 .jumbotron {
     color: white;
+    margin-bottom: 0;
+    padding: 10px;
 }
 /*--IDs (made)--*/
 #home {
@@ -112,22 +145,29 @@ nav {
 
 #container-description {
     color: black;
+    padding-bottom: 0;
 }
 
 #about-photo {
     background-image: url(../img/zeke.jpg);
     background-position: center top;
-    height: 65vh;
+    height: 80vh;
     text-align: center;
     width: 100%;
     background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 5%;
+    border-radius: 0 3% 3% 0;
     border: 1px solid black;
 }
 
-#technical-skills .container > p{
+#work {
+    background-image: url(../img/collab.JPG);
+    background-position: center center;
+    background-size: cover;
+}
+
+#work .container > p{
     color: black;
     font-weight: 700;
 }
@@ -137,21 +177,31 @@ nav {
     background-color: rgba(34,34,34,1);
 }
 /*--TYPOGRAPHY--*/
-.bold {
-    font-weight: 600;
+
+
+.skills {
+    padding: 10px;
 }
 
-.bolder {
-    font-weight: 900;
+.main-header {
+    margin-bottom: 50px;
+    font-size: 1.2em;
+    font-family: 'Nexa', sans-serif;
+    font-weight: 100;
+    color: floralwhite;
 }
 
-.font-header {
-    font-family: 'Candal', sans-serif;
+.main-header h1 {
+    font-size: 4.0em;
+}
+
+.sub-header {
+    font-family: 'Nexa', sans-serif;
     font-size: 1.5em;
 }
 
 .font-nav {
-    font-family: 'Candal', sans-serif;
+    font-family: 'Nexa', sans-serif;
     font-size: 0.9em;
 }
 
@@ -160,11 +210,20 @@ nav {
 }
 
 .separator {
-    font-family: "paytone-one", sans-serif;
+    font-family: "NEORD", sans-serif;
     color: crimson;
     padding-bottom: 30px;
     margin-bottom: 30px;
     border-bottom: 3px solid crimson;
+    font-size: 4.5em;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.bolder {
+    font-weight: 900;
 }
 
 
@@ -185,13 +244,33 @@ nav {
     background-color: white;
 }
 
+.skills h3 {
+    font-weight: 800;
+}
+.skills p {
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
 .description {
 /*    margin-left: 40%;*/
 /*    width: 50%;*/
-    line-height: 1.8em;
+    padding-bottom: 20px;
+    line-height: 1.2em;
     margin-bottom: 1.4em;
-    font-size: 1.6em;
+    font-size: 2.2em;
+    border-bottom: 1px solid black;
 }
+
+.inline-media {
+    position: relative;
+    right: 0;
+}
+
+.inline-media li {
+    display: inline-block;
+}
+
 
 /*--IMAGE CLASS--*/
 .social-media li {
@@ -302,16 +381,5 @@ nav {
         }
 
 
-.no-margin {
-    margin: 0;
-    padding: 10px;
-}
 
-.inline-media {
-    position: relative;
-    right: 0;
-}
 
-.inline-media li {
-    display: inline-block;
-}
